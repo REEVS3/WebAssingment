@@ -22,37 +22,69 @@
 
 
   .headertext {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -190%);
+    overflow: hidden;
     color: white;
+    padding: 20px 10px;
+    
+  
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+
+
+
+  .headertext h1 {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+
+
   }
 
 
 .toptracks{
   
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  overflow: hidden;
+  color: white;
+  padding: 20px 10px;
+  
 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 
 
 }
 
+
+.toptracks h1{
+
+
+
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+
+
+
+
+}
 
 .recenttracks{
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 640%);
+  overflow: hidden;
+  color: white;
+  padding: 20px 10px;
+  
+
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 
@@ -61,6 +93,28 @@
 
 
 }
+
+
+
+
+
+.recenttracks h1{
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+
+
+
+
+
+
+}
+
 
 
 
