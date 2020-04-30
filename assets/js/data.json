@@ -1,0 +1,186 @@
+{
+
+    "TopSongs":[
+
+        
+        {"Artist":"The Weekend",
+        "Song":"Starboy",
+        "Scrobles":450
+        },
+        {"Artist":"YBN Conrade",
+            "Song":"RNP" ,
+            "Scrobles":350
+        },
+        {"Artist":"Tyler The Creator"
+            ,"Song":"IGOR" ,
+            "Scrobles":300
+        },
+        {"Artist":"Still Woozy",
+            "Song":"Habit",
+            "Scrobles":290
+        },
+        {"Artist":"Joji",
+            "Song":"Run" ,
+            "Scrobles":250
+        },
+        {"Artist":"Joji",
+            "Song":"Sanctuary",
+            "Scrobles":227
+        },
+        {"Artist":"Gambinio",
+            "Song":"Redbone",
+            "Scrobles":200
+        },
+        {"Artist":"Daily J",
+            "Song":"Black Lagoon",
+            "Scrobles":185
+        },
+        {"Artist":"Lil Peep",
+            "Song":"Star Shopping",
+            "Scrobles":150
+        },
+        {"Artist":"ZICO",
+            "Song":"Any Song",
+            "Scrobles":90
+        }
+    ],
+
+    "RecentSongs":[
+    
+        {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "No No",
+        "Artists" : "Apache",
+        "time" : "5 minutes ago"
+    },
+
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "a lot",
+        "Artists" : "21 Savage",
+        "time" : "10 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "Circles",
+        "Artists" : "Mac Miller",
+        "time" : "15 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "minimal",
+        "Artists" : "ROLE MODEL",
+        "time" : "20 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "Alien",
+        "Artists" : "RIN",
+        "time" : "25 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "Happy",
+        "Artists" : "Oh Wonder",
+        "time" : "35 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "Grown UP",
+        "Artists" : "Danny Brown",
+        "time" : "40 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "BBY",
+        "Artists" : "Two Feet",
+        "time" : "43 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "Old Town Road",
+        "Artists" : "Lil Nas X",
+        "time" : "45 minutes ago"
+    },
+    {
+        "albumurl" : "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+        "Song" : "Bad",
+        "Artists" : "James Bay",
+        "time" : "55 minutes ago"
+    }
+
+
+    ],
+
+
+
+    "GridSongs":[
+        {
+            "gridalbum" : "assets/img/a1.jpg",
+            "gridartist" : "The Weekend",
+            "gridlistens": "1,423 Listens"
+        },
+        {
+            "gridalbum" : "assets/img/a2.jpg",
+            "gridartist" : "Tyler The Creator",
+            "gridlistens": "1,231 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a3.jpg",
+            "gridartist" : "Queen",
+            "gridlistens": "1,003 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a4.jpg",
+            "gridartist" : "YBN",
+            "gridlistens": "1,203 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a5.jpg",
+            "gridartist" : "Lil Nas X",
+            "gridlistens": "1,203 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a6.png",
+            "gridartist" : "OH WONDER",
+            "gridlistens": "900 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a7.jpg",
+            "gridartist" : "Mac Miller",
+            "gridlistens": "765 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a8.jpg",
+            "gridartist" : "Apache",
+            "gridlistens": "654 Listens"
+        },
+
+        {
+            "gridalbum" : "assets/img/a9.jpg",
+            "gridartist" : "21 Savage",
+            "gridlistens": "345 Listens"
+        }
+
+
+
+
+
+
+
+    ]
+
+
+}
+
+
+
+   
+    
+
