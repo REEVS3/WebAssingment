@@ -20,7 +20,6 @@
 
 
 
-
   .headertext {
     overflow: hidden;
     color: white;
@@ -221,7 +220,14 @@ nav a{
     display: flex;
     background-size:cover;
     flex-direction: column;
+    padding-top: 0%;
     
+  }
+
+  .gridartist{
+
+
+    margin-top: (0);
   }
 
 }
@@ -245,8 +251,9 @@ nav a{
   
   .gridsongs{
     display: flex;
-    background-size:cover;
+    background-size: cover;
     flex-direction: column;
+    
   }
 
   
