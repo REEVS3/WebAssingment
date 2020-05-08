@@ -1,200 +1,138 @@
+
+
+
+
 fetch("assets/js/data.json")
 .then(response => { return response.json() })
 .then(data => {
-    let songdiv = document.getElementsByClassName('song')
-    let artistdiv = document.getElementsByClassName('artist')
-    let plays = document.getElementsByClassName('barchart')
 
-    for (let i =0; i < songdiv.length; i++)
-    {
-        songdiv[i].innerHTML= (data['TopSongs'][i]['Song'])
-        artistdiv[i].innerHTML= (data['TopSongs'][i]['Artist'])
-        plays[i].innerHTML= (data['TopSongs'][i]['Scrobles'])
 
+   let createnew=(type,clazz,content)=>{
+      let element =document.createElement(type)
+      clazz.forEach(c => {
+        element.classList.add(c)
+      });
+      element.innerHTML=content
+      element.style.paddingRight="20px"
+      return element
     }
+
     
 
-    let songlisten = document.getElementsByClassName('songlisten')
-    let artistlisten = document.getElementsByClassName('artistlisten')
-    let timelisten = document.getElementsByClassName('timelisten')
-    let albumurl = document.getElementsByClassName('albumurl')
+
+    data['GridSongs'].forEach(gs=> {
+      
+
+      let GridSongs = document.createElement("div")
+      GridSongs.style.backgroundImage="url("+gs.gridalbum+")"
+      GridSongs.classList.add("gridsongs")
+
+      let GridArtist = createnew("div",["gridartist"],gs.gridartist)
+      let GridPlays = createnew("div",["gridplays"],gs.gridlistens)
+      
+
+      GridSongs.append(GridArtist,GridPlays)
+
+      document.querySelector("#gridcont").append(GridSongs)
 
 
 
-    for (let i =0; i < songlisten.length; i++)
-    {
-         songlisten[i].innerHTML= (data['RecentSongs'][i]['Song'])
-        artistlisten[i].innerHTML= (data['RecentSongs'][i]['Artists'])
-        timelisten[i].innerHTML= (data['RecentSongs'][i]['time']) 
-        albumurl[i].src= (data['RecentSongs'][i]['albumurl'])
+    })
+
+
+
+
+    data['RecentSongs'].forEach((rs,i) => {
+      
+      let recentsongli =document.createElement("li")
+      
+      let aicon=document.createElement("div")
+
+      aicon.style.backgroundImage="url("+rs.albumurl+")"
+      aicon.classList.add("aicon")
+
+      let song = createnew("div",["song"],rs.Song)
+
+      let artist = createnew("div",["rartist"],rs.Artists)
+
+      let time = createnew("div",["time"],rs.time)
     
-     
-    }
+      
+      recentsongli.append(aicon,song,artist,time);
+      document.querySelector("#recenttracks").append(recentsongli)
+
+    });
+
+
+
+
+
     
 
-    let gridartist = document.getElementsByClassName('gridartist')
-    let gridplays = document.getElementsByClassName('gridplays')
-    let gridalbum = document.getElementsByClassName('covers')
-   
-    for (let i =0; i < gridartist.length; i++)
-    {
-        gridalbum[i].src= (data['GridSongs'][i]['gridalbum'])
-        gridartist[i].innerHTML= (data['GridSongs'][i]['gridartist'])
-        gridplays[i].innerHTML= (data['GridSongs'][i]['gridlistens'])
-  
+    data['TopSongs'].forEach((ts,i) => {
+      
+      let topsongli =document.createElement("li")
+      let heart = createnew("div",["far", "fa-heart","liked"],"")
+
+      let number = createnew("div",["number"],i+1)
+
+      let song = createnew("div",["song"],ts.Song)
+
+      let artist = createnew("div",["artist"],ts.Artist)
+
+      let barchart = createnew("div",["barchart"],ts.Scrobles)
+      let maxwidth=data.TopSongs[0].Scrobles
+      let curr =ts.Scrobles/maxwidth*100
+      barchart.style.width=curr+"%"
+      
+      topsongli.append(heart,number,song,artist,barchart);
+      document.querySelector("#toptracks").append(topsongli)
+
+    });
     
-       
-    }
+
+    document.addEventListener("click", (event) => {
+      if(event.target.matches(".liked")){
+
+        if(event.target.classList.contains("far"))
+        {
+
+          event.target.classList.remove("far")
+          event.target.classList.add("fas")
+
+        }
+        else
+        {
+          event.target.classList.remove("fas")
+          event.target.classList.add("far")
+
+        }
+        
+      }
+    });
     
-    console.log(gridalbum)
-
- 
-
-
-
-})
 
 
 
 
-function heart1like() {
-    let heart=document.getElementById("heart1")
-   if (heart.style.filter == "brightness(100%)")
-   {
-   heart.style.filter = "brightness(50%)";
-   }
-   else 
-   {
-     heart.style.filter = "brightness(100%)";
-   }
-   }
-
-
-
-
-function heart2like(){
-    let heart=document.getElementById("heart2")
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-
-}
-
-
-
-function heart3like(){
-    let heart=document.getElementById("heart3")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
+  })
 
 
 
 
 
-function heart4like(){
-    let heart=document.getElementById("heart4")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
-
-
-
-function heart5like(){
-    let heart=document.getElementById("heart5")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
-
-
-
-function heart6like(){
-    let heart=document.getElementById("heart6")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
 
 
 
 
 
-function heart7like(){
-    let heart=document.getElementById("heart7")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
 
 
 
 
-function heart8like(){
-    let heart=document.getElementById("heart8")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
 
 
 
-
-function heart9like(){
-    let heart=document.getElementById("heart9")
-
-    if (heart.style.filter == "brightness(100%)")
-{
-heart.style.filter = "brightness(50%)";
-}
-else 
-{
-  heart.style.filter = "brightness(100%)";
-}
-}
 
 
 function heart10like(){
@@ -209,9 +147,6 @@ else
   heart.style.filter = "brightness(100%)";
 }
 }
-
-
-
 
 function SubmitComment(){
 
@@ -228,13 +163,10 @@ function SubmitComment(){
   let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   let dateTime = date+' '+time; 
   
-  
   timediv.innerHTML=dateTime;
   namediv.innerHTML=Username;
   commentdiv.innerHTML=Usercomment;
 
-  
-  
   console.log.Usercomment
   console.log.Username
   console.log.dateTime
@@ -242,14 +174,10 @@ function SubmitComment(){
   commentbox.append(namediv)
   commentbox.append(commentdiv)
   commentbox.append(timediv)
-
-  
-
 }
 
 
 function SubmitComment2(){
-
 
   let Username=document.getElementById("userfname").value
   let Usercomment=document.getElementById("userlname").value
@@ -259,7 +187,4 @@ function SubmitComment2(){
   document.getElementById("userfname").value="";
   document.getElementById("userlname").value="";
   document.getElementById("phnum").value="";
-
-
-
 }
