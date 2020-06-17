@@ -15,8 +15,8 @@ app.set("view engine","ejs");
 app.set('views', path.join(__dirname, 'views'));
 
 
-const login = require('../routes/login')
-const data = require('../routes/data')
+const login = require('./routes/login')
+const data = require('./routes/data')
 
 app.use("/data", data)
 app.use("/login", login)
