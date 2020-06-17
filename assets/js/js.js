@@ -115,9 +115,6 @@ fetch("/data")
    namediv.innerHTML=Username;
    commentdiv.innerHTML=Usercomment;
 
-   console.log.Usercomment
-   console.log.Username
-   console.log.dateTime
 
    commentbox.append(namediv)
    commentbox.append(commentdiv)
