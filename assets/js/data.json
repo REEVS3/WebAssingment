@@ -116,54 +116,54 @@
 
     "GridSongs":[
         {
-            "gridalbum" : "assets/img/a1.jpg",
+            "gridalbum" : "img/a1.jpg",
             "gridartist" : "The Weekend",
             "gridlistens": "1,423 Listens"
         },
         {
-            "gridalbum" : "assets/img/a2.jpg",
+            "gridalbum" : "img/a2.jpg",
             "gridartist" : "Tyler The Creator",
             "gridlistens": "1,231 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a3.jpg",
+            "gridalbum" : "img/a3.jpg",
             "gridartist" : "Queen",
             "gridlistens": "1,003 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a4.jpg",
+            "gridalbum" : "img/a4.jpg",
             "gridartist" : "YBN",
             "gridlistens": "1,203 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a5.jpg",
+            "gridalbum" : "img/a5.jpg",
             "gridartist" : "Lil Nas X",
             "gridlistens": "1,203 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a6.png",
+            "gridalbum" : "img/a6.png",
             "gridartist" : "OH WONDER",
             "gridlistens": "900 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a7.jpg",
+            "gridalbum" : "img/a7.jpg",
             "gridartist" : "Mac Miller",
             "gridlistens": "765 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a8.jpg",
+            "gridalbum" : "img/a8.jpg",
             "gridartist" : "Apache",
             "gridlistens": "654 Listens"
         },
 
         {
-            "gridalbum" : "assets/img/a9.jpg",
+            "gridalbum" : "img/a9.jpg",
             "gridartist" : "21 Savage",
             "gridlistens": "345 Listens"
         }

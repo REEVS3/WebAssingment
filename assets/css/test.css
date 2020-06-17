@@ -1,71 +1,23 @@
 
 .header-img {
-    width: auto;
-    height:350px;
-    background-position-x: 200px;
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/background.jpg');
-    background-position: center;
-    background-size: cover;
-  }
+  width: auto;
+  height:350px;
+  background-position-x: 200px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/background.jpg');
+  background-position: center;
+  background-size: cover;
+}
 
 
 .covers{
 
-  width: 100%;
+width: 100%;
 }
 
 
-
-
-
-
-
-  .headertext {
-    overflow: hidden;
-    color: white;
-    padding: 20px 10px;
-    
-  
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  }
-
-
-
-
-  .headertext h1 {
-    float: center;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
-
-
-  }
-
-
-.toptracks{
-  
-  overflow: hidden;
-  color: white;
-  padding: 20px 10px;
-  
-
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
-
-
-}
-
-
-.toptracks h1{
-
-
-
+.error {
   float: center;
-  color: black;
+  color: red;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -78,13 +30,75 @@
 
 }
 
-.recenttracks{
+
+
+
+
+.headertext {
   overflow: hidden;
   color: white;
   padding: 20px 10px;
   
 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
+
+.headertext h1 {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+
+
+}
+
+
+.toptracks{
+
+overflow: hidden;
+color: white;
+padding: 20px 10px;
+
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+
+}
+
+
+.toptracks h1{
+
+
+
+float: center;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+
+
+
+
+}
+
+.recenttracks{
+overflow: hidden;
+color: white;
+padding: 20px 10px;
+
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 
 
@@ -98,14 +112,14 @@
 
 
 .recenttracks h1{
-  float: center;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
+float: center;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
 
 
 
@@ -118,19 +132,19 @@
 
 
 nav {
-      z-index: 1;
-      position: sticky;
-      top: 0%;
-      width: 100%;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between  ;
-      background-color: white;
+    z-index: 1;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between  ;
+    background-color: white;
 
 }
 .songlisten{
-  width: 200px;
-  padding-left: 20px;
+width: 200px;
+padding-left: 20px;
 
 
 
@@ -138,26 +152,26 @@ nav {
 }
 
 .albumurl{
-  width: 50px;
+width: 50px;
 
 }
 
 
 .timelisten{
- 
-  padding-left: 270px;
+
+padding-left: 270px;
 
 }
 
 .artistlisten{
- width: 90px;
+width: 90px;
 
 }
 
 nav ul
 {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 
 
 }
@@ -165,8 +179,8 @@ nav ul
 
 
 nav a{
-  color: black;
-  padding: 5px;
+color: black;
+padding: 5px;
 
 
 
@@ -176,23 +190,23 @@ nav a{
 
 
 @media screen and (min-width: 400px) {
-  #gridcont{
+#gridcont{
 
-    width: 100%;
-    padding-top: 100%;
-    
-
-  }
-  .gridsongs{
+  width: 100%;
  
-    width:100%;
-    height:0px;
-    padding-top: 100%;
-  }
+  
+
+}
+.gridsongs{
+
+  width:100%;
+  height:0px;
+  padding-top: 100%;
+}
 
 
-  .gridartist{
-  margin-top: -100%;
+.gridartist{
+margin-top: -100%;
 
 
 
@@ -209,95 +223,95 @@ nav a{
 
 @media screen and (min-width: 1250px) {
 
-  #gridcont{
+#gridcont{
 
-    width: 50%;
-  }
-  .gridsongs{
-    
-    height: 200px;
-    width: 200px;
-    display: flex;
-    background-size:cover;
-    flex-direction: column;
-    padding-top: 0%;
-    
-  }
-
-  .gridartist{
-    margin-top: 0;
-  }
+  width: 50%;
+}
+.gridsongs{
   
+  height: 200px;
+  width: 200px;
+  display: flex;
+  background-size:cover;
+  flex-direction: column;
+  padding-top: 0%;
+  
+}
+
+.gridartist{
+  margin-top: 0;
+}
+
 }
 
 
 
 
-  
+
+
+#gridcont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black;
  
-  #gridcont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: white;
-    font-size: 25px;
-    text-shadow: 2px 2px 2px black;
-   
-    padding: 0 7;
-    margin: auto;
-  }
-  
-  .gridsongs{
-    display: flex;
-    background-size: cover;
-    flex-direction: column;
-    
-  }
+  padding: 0 7;
+  margin: auto;
+}
 
+.gridsongs{
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  
+}
+
+
+
+.gridartist{
+  padding-top: 10px;
+  padding-left: 10px;
+  
   
 
-  .gridartist{
-    padding-top: 10px;
-    padding-left: 10px;
-    
-    
-
-  }
-  
+}
 
 
-  .gridplays{
-    margin-left: auto;
-    padding-bottom: 10px;
-    margin-top: auto;
 
-  }
+.gridplays{
+  margin-left: auto;
+  padding-bottom: 10px;
+  margin-top: auto;
+
+}
 
 
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 
 
 
 
-  .space {
-    height: 20px;
+.space {
+  height: 20px;
 
 
 }
 
 .time{
-  margin-left: auto;
+margin-left: auto;
 
 }
 
 .rartist{
-  padding-left: 50px;
-  
+padding-left: 50px;
+
 
 
 }
@@ -305,27 +319,27 @@ nav a{
 .aicon
 {
 
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  
+width: 50px;
+height: 50px;
+background-size: contain;
+
 
 }
 
 
 .body{
 
-  background-color: grey;
+background-color: grey;
 
 
 }
 
 ul{
-  
-  width: 700px;
-  margin: 100px auto 0;
-  padding: 10px;
-  box-sizing: border-box;
+
+width: 700px;
+margin: 100px auto 0;
+padding: 10px;
+box-sizing: border-box;
 
 }
 
@@ -333,63 +347,63 @@ ul{
 ul li
 {
 
-  
-  display: flex;
-  background: rgba(255,255,255,.1);
-  padding: 10px 20px;
-  color:  black;
-  margin: 5px 0;
-  transition: .5s;
+
+display: flex;
+background: rgba(255,255,255,.1);
+padding: 10px 20px;
+color:  black;
+margin: 5px 0;
+transition: .5s;
 
 
 }
 ul li:hover
 {
-  background-color: grey;
-  transform:  scale(1.05);
+background-color: grey;
+transform:  scale(1.05);
 }
 
 .heart{
-  width: 40px;
-  
+width: 40px;
+
 
 }
 
 .song{
-  width: 100px;
-  padding-left: 10px;
-  font-weight: bold;
+width: 100px;
+padding-left: 10px;
+font-weight: bold;
 }
 
 .artist{
-  width: 100px;
-  color: black;
+width: 100px;
+color: black;
 
 
 }
 
 
 .barchart {
-  font-size: 20px;
-  height: 50px;
-  color:  white;
-  background-color: black;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  padding-left: 100px;
+font-size: 20px;
+height: 50px;
+color:  white;
+background-color: black;
+border-radius: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+padding-left: 100px;
 }
 
 .comment {
-  width: 40%;
-  height: 100px;
-  padding: 10px;
-  background-color: whitesmoke;
-  font: 1.4em/1.6em;
-  color: black;
-  }
+width: 40%;
+height: 100px;
+padding: 10px;
+background-color: whitesmoke;
+font: 1.4em/1.6em;
+color: black;
+}
 
 #commentbox{
 
@@ -401,41 +415,41 @@ background-color: white;
 }
 
 
-              
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: orange;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: red;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: white;
-    padding: 20px;
-  }
-  /* .avatar{
-    vertical-align: top;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  
-  } */
+            
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+/* .avatar{
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+} */
 
