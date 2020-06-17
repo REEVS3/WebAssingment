@@ -48,7 +48,6 @@
 }
 
 .toptracks h1 {
-    float: center;
 	color: black;
 	text-align: center;
 	padding: 12px;
@@ -66,7 +65,6 @@
 }
 
 .recenttracks h1 {
-    float: center;
 	color: black;
 	text-align: center;
 	padding: 12px;
