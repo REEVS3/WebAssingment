@@ -97,30 +97,29 @@ fetch("/data")
 
 
  function SubmitComment(){
-
-   alert("Thank you for commenting!")
-
-   let Username=document.getElementById("name").value
-   let Usercomment=document.getElementById("usercomment").value
-   let commentbox=document.getElementById("commentbox")
-   let namediv = document.createElement('div')
-   let commentdiv = document.createElement('div')
-   let timediv = document.createElement('div')
-   let today = new Date();
-   let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-   let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-   let dateTime = date+' '+time; 
+  alert("Thank you for commenting!")
+  let Username = $('#name').val()
+  let Usercomment = $('#usercomment').val()
+  let commentbox = $('#commentbox')
   
-   timediv.innerHTML=dateTime;
-   namediv.innerHTML=Username;
-   commentdiv.innerHTML=Usercomment;
+  let namediv = $("<div></div>")
+  let commentdiv = $("<div></div>")
+  let timediv = $("<div></div>")
+  let today = new Date();
+  let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  let dateTime = date+' '+time; 
 
+  
+  namediv.html(Username)
+  commentdiv.html(Usercomment)
+  timediv.html(dateTime)
+  
 
-   commentbox.append(namediv)
-   commentbox.append(commentdiv)
-   commentbox.append(timediv)
+  commentbox.append(namediv)
+  commentbox.append(commentdiv)
+  commentbox.append(timediv)
  }
-
 
  function SubmitComment2(){
 
