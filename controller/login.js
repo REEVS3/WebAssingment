@@ -1,19 +1,20 @@
 exports.login= (req, res) => {
     res.render("login")
 }
-
-
-exports.signin= (req, res) => {
-    if  (username =="user" && password =="P@ssw0rd123")
+    exports.signin= (req, res) => {
+     
+    const user = req.body.username
+    const password = req.body.password
+     
+    if (user =="user" && password =="P@ssw0rd123")
 
     {
         res.redirect("/")
-    }
+    } 
     
-    else
+     else
     {
         res.redirect("/login")
-    }
+    } 
 
-}
-
+ }

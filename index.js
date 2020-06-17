@@ -4,12 +4,13 @@ const port = 5000
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts')
 const fetch = require('node-fetch')
-const bodyParser = require("body-parser")
 
-app.use(bodyParser.urlencoded());
+const bodyParser = require("body-parser")
+app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(expressLayouts)
 app.use(express.static(path.join(__dirname, 'assets')))
+
 
 app.set("view engine","ejs");
 app.set('views', path.join(__dirname, 'views'));
